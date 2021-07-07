@@ -84,3 +84,9 @@ touch src/components/Spinner.svelte
 ```shell
 touch src/components/BookCard.svelte
 ```
+
+## ページネーション
+
+```shell
+npm i svelte-infinite-scroll
+```
