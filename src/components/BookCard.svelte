@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { BookItem } from '../repositories/book'
+    import { link } from 'svelte-spa-router'
     export let book: BookItem
 
     $: src = book.volumeInfo.imageLinks
@@ -16,10 +17,13 @@
     </div>
     <div class="border-r border-b border-l border-grey-light sm:border-l-0 sm:border-t sm:border-grey-light bg-white rounded-b sm:rounded-b-none sm:rounded-r p-4 flex flex-col justify-between leading-normal w-100 sm:w-9/12 lg:w-7/12">
         <div class="my-4">
-        <div class="text-black font-bold text-xl mb-2">{book.volumeInfo.title}</div>
-        <p class="text-grey-darker text-sm break-words w-9/12 m-auto">
-            {description}
-        </p>
+            <a href={`/books/${book.id}`} use:link>
+                <div class="text-black font-bold text-xl mb-2">{book.volumeInfo.title}</div>
+            </a>
+            <div class="text-black font-bold text-xl mb-2">{book.volumeInfo.title}</div>
+            <p class="text-grey-darker text-sm break-words w-9/12 m-auto">
+                {description}
+            </p>
         </div>
     </div>
 </div>
