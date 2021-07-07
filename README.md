@@ -72,3 +72,9 @@ touch src/repositories/RepositoryFactory.ts
 ```shell
 touch src/components/SearchBar.svelte
 ```
+
+## ローディングコンポーネント追加
+
+```shell
+touch src/components/Spinner.svelte
+```
