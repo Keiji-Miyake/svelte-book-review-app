@@ -1,3 +1,13 @@
+<script lang="ts">
+    import SearchBar from '../components/SearchBar.svelte'
+
+    let q = ''
+</script>
+
 <div>
-    本を探す
+    <SearchBar bind:value={q} />
+</div>
+
+<div class="text-center mt-4">
+    { q }
 </div>
