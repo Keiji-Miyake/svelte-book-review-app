@@ -73,8 +73,14 @@ touch src/repositories/RepositoryFactory.ts
 touch src/components/SearchBar.svelte
 ```
 
-## ローディングコンポーネント追加
+## ローディングコンポーネント作成
 
 ```shell
 touch src/components/Spinner.svelte
+```
+
+## BookCardコンポーネント作成
+
+```shell
+touch src/components/BookCard.svelte
 ```

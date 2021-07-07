@@ -1,6 +1,7 @@
 <script lang="ts">
     import SearchBar from '../components/SearchBar.svelte'
     import Spinner from '../components/Spinner.svelte'
+    import BookCard from '../components/BookCard.svelte'
     import type { BookItem, Result } from '../repositories/book'
     import RepositoryFactory, { BOOK } from '../repositories/RepositoryFactory'
     const BookRepository = RepositoryFactory[BOOK]
@@ -32,9 +33,11 @@
     {#if empty}
         <div>検索結果が見つかりませんでした。</div>
     {:else}
-        {#each books as book (book.id)}
-            <div>{book.volumeInfo.title}</div>
-        {/each}
+        <div class="grid grid-cols-1 gap-2 lg:grid-cols-2">
+            {#each books as book (book.id)}
+                <BookCard {book} />
+            {/each}
+        </div>
     {/if}
     {#await promise}
         <div class="flex justify-center">
