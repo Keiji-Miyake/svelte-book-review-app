@@ -90,3 +90,10 @@ touch src/components/BookCard.svelte
 ```shell
 npm i svelte-infinite-scroll
 ```
+
+## ストアの実装
+
+```shell
+mkdir -p src/store/book
+touch src/store/book/index.ts
+```
