@@ -72,3 +72,21 @@ touch src/repositories/RepositoryFactory.ts
 ```shell
 touch src/components/SearchBar.svelte
 ```
+
+## ローディングコンポーネント作成
+
+```shell
+touch src/components/Spinner.svelte
+```
+
+## BookCardコンポーネント作成
+
+```shell
+touch src/components/BookCard.svelte
+```
+
+## ページネーション
+
+```shell
+npm i svelte-infinite-scroll
+```

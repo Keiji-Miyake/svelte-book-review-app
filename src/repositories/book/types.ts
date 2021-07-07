@@ -12,7 +12,7 @@ export interface Result {
  */
 export interface BookItem {
     id: string;
-    valumeInfo: {
+    volumeInfo: {
         title: string;
         authors: string[];
         publishedDate?: string;
